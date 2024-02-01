@@ -147,15 +147,4 @@ const deleteRecipe = async () => {
 }
 ```
 
-9. **Cerrar conexión**
 
-```
-const closeConnection = async () => {
-	try {
-		await sequelize.close()
-		console.log('⛔ Bye Bye!! -- Database has been closed')
-	}catch(error){
-		throw new Error(error)
-	}
-}
-```
